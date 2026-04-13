@@ -1,0 +1,116 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header { text-align: center; margin-bottom: 2rem; }
+.header h1 { font-size: 2.2rem; font-weight: 800; }
+.header p { color: #a0aec0; margin-top: 0.5rem; }
+
+.card {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.card h2 { font-size: 1.2rem; margin-bottom: 1rem; color: #63b3ed; }
+
+.alert { padding: 0.75rem 1rem; border-radius: 8px; margin-bottom: 1rem; font-size: 0.9rem; }
+.alert-error { background: rgba(245,101,101,0.2); border: 1px solid #fc8181; color: #fc8181; }
+.alert-success { background: rgba(72,187,120,0.2); border: 1px solid #68d391; color: #68d391; }
+
+.progress-bar-bg {
+  background: rgba(255,255,255,0.1);
+  border-radius: 999px;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  border-radius: 999px;
+  transition: width 0.5s ease;
+}
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #a0aec0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  text-decoration: none;
+  text-align: center;
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-primary { background: linear-gradient(135deg, #4facfe, #00f2fe); color: #000; width: 100%; }
+.btn-secondary { background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); width: 100%; margin-top: 0.5rem; }
+.btn-success { background: linear-gradient(135deg, #48bb78, #38a169); color: #fff; width: 100%; }
+.btn-info { background: rgba(99,179,237,0.2); color: #63b3ed; border: 1px solid #63b3ed; width: 100%; margin-top: 0.75rem; }
+.btn-danger { background: rgba(245,101,101,0.2); color: #fc8181; border: 1px solid #fc8181; width: 100%; margin-top: 0.5rem; }
+
+.wallet-info { display: flex; flex-direction: column; gap: 0.75rem; }
+.info-box { background: rgba(255,255,255,0.05); border-radius: 8px; padding: 0.75rem; }
+.info-box label { font-size: 0.75rem; color: #a0aec0; display: block; margin-bottom: 0.25rem; }
+.address { font-size: 0.75rem; word-break: break-all; color: #63b3ed; }
+.balance { font-size: 1.5rem; color: #48bb78; }
+
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-size: 0.85rem; color: #a0aec0; margin-bottom: 0.4rem; }
+.form-group input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.tx-status { margin-top: 1rem; padding: 0.75rem; border-radius: 8px; font-size: 0.9rem; }
+.tx-status.pending { background: rgba(236,201,75,0.2); border: 1px solid #ecc94b; color: #ecc94b; }
+.tx-status.success { background: rgba(72,187,120,0.2); border: 1px solid #68d391; color: #68d391; }
+.tx-status.failed { background: rgba(245,101,101,0.2); border: 1px solid #fc8181; color: #fc8181; }
+.tx-link { display: block; margin-top: 0.5rem; color: #63b3ed; text-decoration: underline; }
+
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 999;
+}
+.modal {
+  background: #1a1a2e;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+}
+.modal h2 { margin-bottom: 0.5rem; }
+.modal p { color: #a0aec0; margin-bottom: 1rem; font-size: 0.9rem; }
+.wallet-option { margin-bottom: 0.75rem !important; }
+
+.footer { text-align: center; margin-top: 2rem; color: #a0aec0; font-size: 0.85rem; }
