@@ -70,11 +70,11 @@ cargo test
 
 ## 📸 Screenshots
 See `/screenshots` folder for:
-- Wallet connection modal
-- Campaign progress
-- Donation success
-- Mobile responsive view
-- CI/CD pipeline passing
+- Wallet connection modal :- https://github.com/jayantvaibhavspj/stellar-greenbelt/blob/8ca7099dd71fc2a9a31cd5f7bc4e25dfb25b0f66/screenshots/wallet-modal.png.png
+- Main page desktop view :- https://github.com/jayantvaibhavspj/stellar-greenbelt/blob/8ca7099dd71fc2a9a31cd5f7bc4e25dfb25b0f66/screenshots/Main%20page%20-%20desktop%20view.png.png
+- Donation success :- https://github.com/jayantvaibhavspj/stellar-greenbelt/blob/8ca7099dd71fc2a9a31cd5f7bc4e25dfb25b0f66/screenshots/Donation%20success.png.png
+- Mobile responsive view :- https://github.com/jayantvaibhavspj/stellar-greenbelt/blob/8ca7099dd71fc2a9a31cd5f7bc4e25dfb25b0f66/screenshots/mobile-responsive.png.png
+- CI/CD pipeline passing :- https://github.com/jayantvaibhavspj/stellar-greenbelt/blob/8ca7099dd71fc2a9a31cd5f7bc4e25dfb25b0f66/screenshots/CICD%20pipeline%20passing.png.png
 
 ## 🔄 CI/CD Pipeline
 GitHub Actions automatically runs contract tests on every push to `main`.
