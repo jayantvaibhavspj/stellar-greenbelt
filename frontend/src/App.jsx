@@ -3,7 +3,7 @@ import * as StellarSdk from '@stellar/stellar-sdk';
 import { isConnected, requestAccess, getAddress, signTransaction } from '@stellar/freighter-api';
 import './App.css';
 
-const CONTRACT_ID = 'CDCWAY4OJ4QC3KEPOWJTIMQSRT66TV4ISXCP7MR4MX2K52IP322A22S4';
+const CONTRACT_ID = 'CAZYTHFYCLFPFNBX7ANOVT5ZGCJYKZWPTAT7CIMJDEJEZZWAJK64IPIY'
 const SOROBAN_URL = 'https://soroban-testnet.stellar.org';
 const HORIZON_URL = 'https://horizon-testnet.stellar.org';
 const NETWORK_PASSPHRASE = StellarSdk.Networks.TESTNET;
@@ -326,7 +326,7 @@ const App = () => {
       </section>
 
       <footer className="footer">
-        <p>Built for Stellar Orange Belt Challenge 🟠</p>
+        <p>Built for Stellar green Belt Challenge 🟢</p>
       </footer>
     </div>
   );
